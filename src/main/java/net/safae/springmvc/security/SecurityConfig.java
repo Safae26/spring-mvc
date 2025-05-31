@@ -61,6 +61,6 @@ public class SecurityConfig {
 
 
     // 403 : Not Authorized
-    // Ameliorations : Sign in, edit products, logout, edit profiles
+    // Ameliorations : Sign in, edit profiles
 
 }

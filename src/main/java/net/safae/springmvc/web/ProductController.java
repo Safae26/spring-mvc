@@ -9,9 +9,7 @@ import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -21,7 +19,7 @@ public class ProductController {
      private ProductRepository productRepository;
 
     @GetMapping("/user/index")
-    @PreAuthorize("hasRole='USER'")
+    @PreAuthorize("hasRole('USER')")
     public String index(Model model) {
         List<Product> products = productRepository.findAll();
         model.addAttribute("productsList", products);
@@ -33,22 +31,22 @@ public class ProductController {
         return "redirect:/user/index";
     }
     // Pour 'Delete', il ne faut jamais utiliser GET, c'est une faille de sécurité
-    @PreAuthorize("hasRole='ADMIN'")
+    @PreAuthorize("hasRole('ADMIN')")
     @PostMapping("/admin/delete")
     public String delete(@RequestParam(name="id") Long id) {
         productRepository.deleteById(id);
         return "redirect:/user/index";
     }
 
-    @GetMapping("/admin/newProduct")
-    @PreAuthorize("hasRole='ADMIN'")
+    @GetMapping("/newProduct")
+    @PreAuthorize("hasRole('ADMIN')")
     public String newProduct(Model model) {
         model.addAttribute("product", new Product());
         return "new-product";
     }
 
     @PostMapping("/admin/saveProduct")
-    @PreAuthorize("hasRole='ADMIN'")
+    @PreAuthorize("hasRole('ADMIN')")
     public String saveProduct(@Valid Product product, BindingResult bindingResult, Model model) {
         if (bindingResult.hasErrors()) {
             return "new-product";
@@ -71,6 +69,40 @@ public class ProductController {
     public String logout(HttpSession session) {
         session.invalidate();
         return "login";
+    }
+
+    @PreAuthorize("hasRole('ADMIN')")
+    @GetMapping("/admin/edit/{id}")
+    public String editProductForm(@PathVariable Long id, Model model) {  // Changé de @RequestParam à @PathVariable
+        Product product = productRepository.findById(id)
+                .orElseThrow(() -> new IllegalArgumentException("Produit invalide ID: " + id));
+        model.addAttribute("product", product);
+        return "edit-product";
+    }
+
+    @PreAuthorize("hasRole('ADMIN')")
+    @PostMapping("/admin/update/{id}")
+    public String updateProduct(@PathVariable Long id, @Valid Product product,  // Changé de @RequestParam à @PathVariable
+                                BindingResult result, Model model) {
+        if (result.hasErrors()) {
+            product.setId(id);
+            return "edit-product";
+        }
+
+        // Ajout de la vérification de l'ID pour sécurité
+        if (!id.equals(product.getId())) {
+            throw new IllegalArgumentException("ID mismatch");
+        }
+
+        productRepository.save(product);
+        return "redirect:/user/index";
+    }
+
+    // Ajout de la gestion des erreurs
+    @ExceptionHandler(IllegalArgumentException.class)
+    public String handleNotFound(Exception ex, Model model) {
+        model.addAttribute("errorMessage", ex.getMessage());
+        return "error";
     }
 
     // 404 : Page not found
