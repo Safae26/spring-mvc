@@ -33,7 +33,7 @@ L'application permet de gérer des produits avec les fonctionnalités suivantes.
    - Test de la couche DAO
 
 5. **Configuration de sécurité**
-   - Désactivation de la protection par défaut de Spring Security
+   - Désactivation de la protection par défaut de Spring Security (au début)
 
 6. **Couche Web et interface**
    - Création du contrôleur Spring MVC et des vues Thymeleaf pour :
@@ -44,6 +44,7 @@ L'application permet de gérer des produits avec les fonctionnalités suivantes.
 
 7. **Sécurisation de l'application**
    - Mise en place de Spring Security
+   - Puisque il ne faut pas stocker les mots de passe en clair dans la base de données, on utilise : InMemoryUserDetailsManager pour la base de données in Memory comme H2
 
 8. **Fonctionnalités supplémentaires**
    - Recherche de produits
