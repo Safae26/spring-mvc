@@ -59,6 +59,15 @@ Créer une application Web JEE basée sur :
          safae	1234	USER
          user	1234	USER
          admin	1234	ADMIN, USER
+      - 🌐 Points d'Accès
+            URL	Description	Rôle requis
+            /	Redirection vers la liste	-
+            /user/index	Liste des produits	USER
+            /newProduct	Formulaire d'ajout	ADMIN
+            /admin/delete	Suppression d'un produit	ADMIN
+            /login	Page de connexion	-
+            /logout	Déconnexion	-
+            /notAuthorized	Page 403 (Accès refusé)	
 
 2. **Modèle de données**
    - Création de l'entité JPA `Product` (Modèle de Données)
