@@ -1,5 +1,11 @@
 # Gestion de Produits - Application Web JEE (All In One Spring MVC Thymeleaf Spring Security)
 
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
+![Thymeleaf](https://img.shields.io/badge/Thymeleaf-005F0F?style=for-the-badge)
+![Spring Security](https://img.shields.io/badge/Spring_Security-6DB33F?style=for-the-badge&logo=Spring-Security&logoColor=white)
+
+Une application web complète de gestion de produits basée sur l'écosystème Spring.
+
 ## Objectif
 Créer une application Web JEE basée sur :
 - Spring Boot
@@ -8,20 +14,32 @@ Créer une application Web JEE basée sur :
 - Thymeleaf
 - Spring Security
 
-L'application permet de gérer des produits avec les fonctionnalités suivantes.
+## L'application permet de gérer des produits avec les fonctionnalités suivantes.
+
+- **CRUD complet** pour les produits
+- **Authentification sécurisée** avec rôles (USER/ADMIN)
+- **Validation des formulaires**
+- **Interface responsive** avec Bootstrap
+- **Recherche de produits**
+- **Gestion des erreurs** (403, 404)
 
 ## Étapes de développement
 
 1. **Initialisation du projet**
    - Création d'un projet Spring Boot avec les dépendances :
-     - Spring Web
-     - Spring Data JPA
-     - H2
-     - MySQL
-     - Thymeleaf
-     - Lombok
+     - **Backend**
+     - Spring Boot 3
      - 🔒 Spring Security
      - ✔️ Spring Validation
+     - Spring Data JPA + Hibernate
+     - Spring Web
+     - **Base de données**
+     - H2
+     - Lombok
+     - **Frontend**
+     - Bootstrap 5
+     - Thymeleaf
+
 
 2. **Modèle de données**
    - Création de l'entité JPA `Product`
