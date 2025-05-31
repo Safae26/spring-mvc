@@ -54,22 +54,27 @@ Créer une application Web JEE basée sur :
       │ └── application.properties
       └── test/ # Tests
    - Configuration du fichier 'application.properties'
-   - 🔐 Accès : L'application démarre avec 3 utilisateurs préconfigurés :
-     - Username Password Rôles
-         safae	1234	USER
-         user	1234	USER
-         admin	1234	ADMIN, USER
-      - 🌐 Points d'Accès
-            URL	Description	Rôle requis
-            /	Redirection vers la liste	-
-            /user/index	Liste des produits	USER
-            /newProduct	Formulaire d'ajout	ADMIN
-            /admin/delete	Suppression d'un produit	ADMIN
-            /login	Page de connexion	-
-            /logout	Déconnexion	-
-            /notAuthorized	Page 403 (Accès refusé)
-      - Configuration de Sécurité (SecurityConfig)
+   - Configuration de Sécurité (SecurityConfig)
+## ⚙️ Configuration
+Configuration du fichier `application.properties`
 
+### 🔐 Utilisateurs par défaut
+| Username | Password | Rôles       |
+|----------|----------|-------------|
+| safae    | 1234     | USER        |
+| user     | 1234     | USER        |
+| admin    | 1234     | ADMIN, USER |
+
+## 🌐 Points d'accès
+| URL              | Description               | Rôle requis |
+|------------------|---------------------------|-------------|
+| /                | Redirection vers la liste | -           |
+| /user/index      | Liste des produits        | USER        |
+| /newProduct      | Formulaire d'ajout        | ADMIN       |
+| /admin/delete    | Suppression d'un produit  | ADMIN       |
+| /login           | Page de connexion         | -           |
+| /logout          | Déconnexion               | -           |
+| /notAuthorized   | Page 403 (Accès refusé)   | -           |
 2. **Modèle de données**
    - Création de l'entité JPA `Product` (Modèle de Données)
 
