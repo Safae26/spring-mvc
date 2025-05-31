@@ -42,19 +42,33 @@ Créer une application Web JEE basée sur :
      - Bootstrap 5
      - Thymeleaf
    - Structure du Projet : 
-     src/
-      ├── main/
-      │ ├── java/net/safae/springmvc/
-      │ │ ├── entities/ # Entités JPA
-      │ │ ├── repositories/ # Interfaces Spring Data
-      │ │ ├── web/ # Contrôleurs MVC
-      │ │ ├── security/ # Configuration de sécurité
-      │ │ └── SpringMvcApplication.java
-      │ └── resources/
-      │ ├── templates/ # Vues Thymeleaf
-      │ ├── static/ # Assets statiques
-      │ └── application.properties
-      └── test/ # Tests
+     ```text
+         src/
+         ├── main/
+         │   ├── java/net/safae/springmvc/
+         │   │   ├── entities/          # Entités JPA (ex: Product.java)
+         │   │   ├── repositories/      # Interfaces Spring Data (ex: ProductRepository.java)
+         │   │   ├── web/               # Contrôleurs MVC (ex: ProductController.java)
+         │   │   ├── security/          # Configuration Spring Security (ex: SecurityConfig.java)
+         │   │   └── SpringMvcApplication.java  # Point d'entrée de l'application
+         │   │
+         │   └── resources/
+         │       ├── templates/         # Vues Thymeleaf (HTML)
+         │       │   ├── products.html       # Liste des produits
+         │       │   ├── new-product.html    # Formulaire de création
+         │       │   ├── edit-product.html   # Formulaire d'édition  
+         │       │   ├── login.html          # Page de connexion
+         │       │   └── notAuthorized.html  # Page d'erreur 403
+         │       │
+         │       ├── static/            # Ressources statiques
+         │       │   ├── css/           # Feuilles de style
+         │       │   ├── js/            # Fichiers JavaScript
+         │       │   └── images/        # Images
+         │       │
+         │       └── application.properties # Configuration de l'application
+         │
+         └── test/                     # Tests unitaires et d'intégration
+     ```
    - Configuration du fichier 'application.properties'
    - Configuration de Sécurité (SecurityConfig)
 ## ⚙️ Configuration
