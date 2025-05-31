@@ -39,7 +39,20 @@ Créer une application Web JEE basée sur :
      - **Frontend**
      - Bootstrap 5
      - Thymeleaf
-
+   - Structure du Projet : 
+     src/
+      ├── main/
+      │ ├── java/net/safae/springmvc/
+      │ │ ├── entities/ # Entités JPA
+      │ │ ├── repositories/ # Interfaces Spring Data
+      │ │ ├── web/ # Contrôleurs MVC
+      │ │ ├── security/ # Configuration de sécurité
+      │ │ └── SpringMvcApplication.java
+      │ └── resources/
+      │ ├── templates/ # Vues Thymeleaf
+      │ ├── static/ # Assets statiques
+      │ └── application.properties
+      └── test/ # Tests
 
 2. **Modèle de données**
    - Création de l'entité JPA `Product`
