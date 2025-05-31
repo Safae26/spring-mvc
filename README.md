@@ -54,9 +54,14 @@ Créer une application Web JEE basée sur :
       │ └── application.properties
       └── test/ # Tests
    - Configuration du fichier 'application.properties'
+   - 🔐 Accès : L'application démarre avec 3 utilisateurs préconfigurés :
+     - Username Password Rôles
+         safae	1234	USER
+         user	1234	USER
+         admin	1234	ADMIN, USER
 
 2. **Modèle de données**
-   - Création de l'entité JPA `Product`
+   - Création de l'entité JPA `Product` (Modèle de Données)
 
 3. **Couche d'accès aux données**
    - Création de l'interface `ProductRepository` basée sur Spring Data
