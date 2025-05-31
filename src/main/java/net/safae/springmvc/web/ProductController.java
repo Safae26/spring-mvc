@@ -18,7 +18,7 @@ public class ProductController {
      @Autowired
      private ProductRepository productRepository;
 
-    @GetMapping("/index")
+    @GetMapping("/user/index")
     public String index(Model model) {
         List<Product> products = productRepository.findAll();
         model.addAttribute("productsList", products);
@@ -27,27 +27,27 @@ public class ProductController {
 
     @GetMapping("/")
     public String home() {
-        return "redirect:/index";
+        return "redirect:/user/index";
     }
 
-    @GetMapping("/delete")
+    @GetMapping("/admin/delete")
     public String delete(@RequestParam(name="id") Long id) {
         productRepository.deleteById(id);
-        return "redirect:/index";
+        return "redirect:/user/index";
     }
 
-    @GetMapping("/newProduct")
+    @GetMapping("/admin/newProduct")
     public String newProduct(Model model) {
         model.addAttribute("product", new Product());
         return "new-product";
     }
 
-    @PostMapping("/saveProduct")
+    @PostMapping("/admin/saveProduct")
     public String saveProduct(@Valid Product product, BindingResult bindingResult, Model model) {
         if (bindingResult.hasErrors()) {
             return "new-product";
         }
         productRepository.save(product);
-        return "redirect:/index";
+        return "redirect:/user/index";
     }
 }
