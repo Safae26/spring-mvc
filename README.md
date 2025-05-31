@@ -67,7 +67,8 @@ Créer une application Web JEE basée sur :
             /admin/delete	Suppression d'un produit	ADMIN
             /login	Page de connexion	-
             /logout	Déconnexion	-
-            /notAuthorized	Page 403 (Accès refusé)	
+            /notAuthorized	Page 403 (Accès refusé)
+      - Configuration de Sécurité (SecurityConfig)
 
 2. **Modèle de données**
    - Création de l'entité JPA `Product` (Modèle de Données)
@@ -95,4 +96,5 @@ Créer une application Web JEE basée sur :
 
 8. **Fonctionnalités supplémentaires**
    - Recherche de produits
-   - Édition et mise à jour des produits
+   - Édition et mise à jour des produits, et profils
+   - Pagination des résultats
