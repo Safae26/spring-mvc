@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+        xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 <head>
     <meta charset="UTF-8">
-    <title>Products</title>
+    <title>Template</title>
     <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/5.3.5/css/bootstrap.min.css">
     <script src="/webjars/bootstrap/5.3.5/js/bootstrap.bundle.js"></script>
 </head>
@@ -11,7 +13,7 @@
     <div class="container">
         <a class="navbar-brand fw-bold fs-4" href="#">
             <i class="bi bi-stars me-2"></i>
-            Lumina
+            Spring MVC
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
             <span class="navbar-toggler-icon"></span>
@@ -28,31 +30,20 @@
                         <i class="bi bi-collection me-1"></i> Products
                     </a>
                 </li>
+            </ul>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+            </ul>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item dropdown mx-1">
                     <a class="nav-link dropdown-toggle px-3 py-2" href="#" role="button" data-bs-toggle="dropdown">
-                        <i class="bi bi-box-seam me-1"></i> Products
+                        <i class="bi bi-box-seam me-1"></i><span class="badge bg-danger rounded-pill me-1" sec:authentication="name"></span>
                     </a>
                     <ul class="dropdown-menu shadow">
-                        <li><a class="dropdown-item py-2" href="#"><i class="bi bi-palette me-2"></i> Design</a></li>
-                        <li><a class="dropdown-item py-2" href="#"><i class="bi bi-code-slash me-2"></i> Development</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item py-2" href="#"><i class="bi bi-layers me-2"></i> Templates</a></li>
+                        <li><a class="dropdown-item py-2" th:href="@{/logout}"><i class="bi bi-palette me-2"></i>Logout</a></li>
                     </ul>
                 </li>
-                <li class="nav-item mx-1">
-                    <a class="nav-link px-3 py-2" href="#">
-                        <i class="bi bi-currency-dollar me-1"></i> Pricing
-                    </a>
-                </li>
             </ul>
-            <div class="d-flex">
-                <button class="btn btn-outline-light rounded-pill me-2 px-3">
-                    <i class="bi bi-box-arrow-in-right me-1"></i> Login
-                </button>
-                <button class="btn btn-light rounded-pill px-3">
-                    <i class="bi bi-person-plus me-1"></i> Sign Up
-                </button>
-            </div>
         </div>
     </div>
 </nav>

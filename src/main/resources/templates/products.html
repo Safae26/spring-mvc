@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="layout1">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security" layout:decorate="layout1">
 <head>
   <meta charset="UTF-8">
   <title>Products</title>
@@ -7,7 +8,7 @@
 </head>
 <body>
   <div class="p-3" layout:fragment="content">
-    <div class="container-fluid p-3">
+    <div class="container-fluid p-3" sec:authorize="hasRole('ADMIN')">
       <a class="btn btn-primary" th:href="@{/newProduct}">New Product</a>
     </div>
     <table class="table">
@@ -20,10 +21,16 @@
           <td th:text="${product.name}"></td>
           <td th:text="${product.price}"></td>
           <td th:text="${product.quantity}"></td>
-          <td>
-            <a class="btn btn-info" th:href="@{'/product/edit/' + ${product.id}}">edit</a>
-            <a class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this product ?')" th:href="@{/delete(id=product.id)}">Delete</a>
+          <td sec:authorize="hasRole('ADMIN')">
+            <a class="btn btn-info" th:href="@{'/product/edit/' + ${product.id}}">Edit</a>
           </td>
+          <td sec:authorize="hasRole('ADMIN')">
+            <!-- Le formulaire est protégé contre les attaques csrf -->
+            <form th:action="@{/admin/delete(id=${product.id})}" method="post">
+              <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this product?')">Delete</button>
+            </form>
+          </td>
+        </tr>
       </tbody>
     </table>
   </div>

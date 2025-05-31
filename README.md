@@ -1,4 +1,4 @@
-# Gestion de Produits - Application Web JEE
+# Gestion de Produits - Application Web JEE (All In One Spring MVC Thymeleaf Spring Security)
 
 ## Objectif
 Créer une application Web JEE basée sur :
