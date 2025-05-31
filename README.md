@@ -53,6 +53,7 @@ Créer une application Web JEE basée sur :
       │ ├── static/ # Assets statiques
       │ └── application.properties
       └── test/ # Tests
+   - Configuration du fichier 'application.properties'
 
 2. **Modèle de données**
    - Création de l'entité JPA `Product`
