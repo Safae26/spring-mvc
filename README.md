@@ -1,50 +1,49 @@
-# Gestion de Produits - Application Web JEE
+# 🛍️ Gestion de Produits - Application Web JEE
 
-## Objectif
-Créer une application Web JEE basée sur :
-- Spring Boot
-- Spring Data JPA
-- Hibernate
-- Thymeleaf
-- Spring Security
+## 🎯 Objectif  
+Créer une application web JEE avec :  
+- 🍃 **Spring Boot**  
+- 🗃️ **Spring Data JPA** + **Hibernate**  
+- 🌿 **Thymeleaf**  
+- 🔒 **Spring Security**  
 
-L'application permet de gérer des produits avec les fonctionnalités suivantes.
+## 🛠️ Étapes de développement  
 
-## Étapes de développement
+1. **🚀 Initialisation du projet**  
+   - 📦 Dépendances :  
+     - 🌐 `Spring Web`  
+     - 🗄️ `Spring Data JPA`  
+     - 🏷️ `H2` / `MySQL`  
+     - 📝 `Thymeleaf`  
+     - ⚡ `Lombok`  
+     - 🔐 `Spring Security`  
+     - ✔️ `Spring Validation`  
 
-1. **Initialisation du projet**
-   - Création d'un projet Spring Boot avec les dépendances :
-     - Spring Web
-     - Spring Data JPA
-     - H2
-     - MySQL
-     - Thymeleaf
-     - Lombok
-     - Spring Security
-     - Spring Validation
+2. **📊 Modèle de données**  
+   - 🏷️ Création de l’entité JPA `Product` (`@Entity`)  
 
-2. **Modèle de données**
-   - Création de l'entité JPA `Product`
+3. **💾 Couche DAO**  
+   - 📂 Interface `ProductRepository` (`JpaRepository`)  
 
-3. **Couche d'accès aux données**
-   - Création de l'interface `ProductRepository` basée sur Spring Data
+4. **🧪 Tests**  
+   - ✅ Validation des opérations CRUD  
 
-4. **Tests**
-   - Test de la couche DAO
+5. **⚙️ Configuration Spring Security**  
+   - 🔓 Désactivation temporaire de la sécurité par défaut  
 
-5. **Configuration de sécurité**
-   - Désactivation de la protection par défaut de Spring Security
+6. **🌐 Interface Web (MVC + Thymeleaf)**  
+   - 📋 Affichage liste des produits (`@GetMapping`)  
+   - 🗑️ Suppression d’un produit (`@DeleteMapping`)  
+   - � Template Bootstrap (`th:fragment`)  
+   - ✏️ Formulaire d’ajout avec validation (`@Valid`)  
 
-6. **Couche Web et interface**
-   - Création du contrôleur Spring MVC et des vues Thymeleaf pour :
-     - Affichage de la liste des produits
-     - Suppression d'un produit
-     - Page template basée sur Thymeleaf layout et Bootstrap
-     - Saisie et ajout d'un produit avec validation du formulaire
+7. **🔐 Sécurisation finale**  
+   - 👤 Authentification (Login/Mot de passe)  
+   - 🛡️ Autorisations (ROLE_ADMIN, ROLE_USER)  
 
-7. **Sécurisation de l'application**
-   - Mise en place de Spring Security
+8. **✨ Bonus**  
+   - 🔍 Recherche de produits (`LIKE %keyword%`)  
+   - ✨ Édition/Mise à jour (`@PutMapping`)  
 
-8. **Fonctionnalités supplémentaires**
-   - Recherche de produits
-   - Édition et mise à jour des produits
+---  
+**🚀 Projet prêt pour le déploiement !**  
