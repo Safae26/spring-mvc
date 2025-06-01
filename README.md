@@ -144,6 +144,5 @@ L'objectif est de créer une application web JEE de gestion de produits basée s
 
 9. **Améliorations possibles** : register et modification de profils,
 
-   show h2 db, keyword issues, templates en markdown, mise a jours repo, structure screen, security config screen
-
+   show h2 db, keyword issues, templates en markdown, mise a jours repo, structure screen
 **Auteur :** Safae ERAJI
