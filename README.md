@@ -9,7 +9,7 @@
 
 L'objectif est de créer une application web JEE de gestion de produits basée sur Spring Data JPA, Hibernate, Thymeleaf, et Spring Security
 
-## Fonctionnalités principales :
+## Fonctionnalités principales : 
 
 - **CRUD complet** pour les produits
 - **Authentification sécurisée** avec rôles (USER/ADMIN)
