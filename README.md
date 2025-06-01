@@ -62,6 +62,23 @@ L'objectif est de créer une application web JEE de gestion de produits basée s
      <img width="911" alt="controller1" src="https://github.com/user-attachments/assets/61df39d0-b316-490e-9e6a-fdd74768910e" />
      <img width="913" alt="controller2" src="https://github.com/user-attachments/assets/b354f3f1-9ae1-4a4c-a0e2-a19bcdaac3b9" />
      <img width="911" alt="controller3" src="https://github.com/user-attachments/assets/53b4e1a4-2ed1-49e7-a2d1-88161c515409" />
+     ### 🔐 Utilisateurs par défaut
+      | Username | Password | Rôles       |
+      |----------|----------|-------------|
+      | safae    | 1234     | USER        |
+      | user     | 1234     | USER        |
+      | admin    | 1234     | ADMIN, USER |
+      
+      ## 🌐 Points d'accès
+      | URL              | Description               | Rôle requis |
+      |------------------|---------------------------|-------------|
+      | /                | Redirection vers la liste | -           |
+      | /user/index      | Liste des produits        | USER        |
+      | /newProduct      | Formulaire d'ajout        | ADMIN       |
+      | /admin/delete    | Suppression d'un produit  | ADMIN       |
+      | /login           | Page de connexion         | -           |
+      | /logout          | Déconnexion               | -           |
+      | /notAuthorized   | Page 403 (Accès refusé)   | -           |
    - Création du contrôleur Spring MVC et des vues Thymeleaf pour :
      - Login Admin :
        <img width="1280" alt="login" src="https://github.com/user-attachments/assets/da31e8d1-357b-4b5d-bd88-8b3398afc5cb" />
@@ -129,23 +146,6 @@ L'objectif est de créer une application web JEE de gestion de produits basée s
 <img width="911" alt="app1" src="https://github.com/user-attachments/assets/d9ee9b1c-2627-4612-a26f-a309a10554d5" />
   
 
-### 🔐 Utilisateurs par défaut
-| Username | Password | Rôles       |
-|----------|----------|-------------|
-| safae    | 1234     | USER        |
-| user     | 1234     | USER        |
-| admin    | 1234     | ADMIN, USER |
-
-## 🌐 Points d'accès
-| URL              | Description               | Rôle requis |
-|------------------|---------------------------|-------------|
-| /                | Redirection vers la liste | -           |
-| /user/index      | Liste des produits        | USER        |
-| /newProduct      | Formulaire d'ajout        | ADMIN       |
-| /admin/delete    | Suppression d'un produit  | ADMIN       |
-| /login           | Page de connexion         | -           |
-| /logout          | Déconnexion               | -           |
-| /notAuthorized   | Page 403 (Accès refusé)   | -           |
 ameliorations : register et modification de profils, show h2 db, keyword issues, templates en markdown, mise a jours repo, structure screen, security config screen
 
 **Auteur :** Safae ERAJI
