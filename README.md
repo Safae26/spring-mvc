@@ -42,33 +42,9 @@ Créer une application Web JEE basée sur :
      - Bootstrap 5
      - Thymeleaf
    - Structure du Projet : 
-     ```text
-         src/
-         ├── main/
-         │   ├── java/net/safae/springmvc/
-         │   │   ├── entities/          # Entités JPA (ex: Product.java)
-         │   │   ├── repositories/      # Interfaces Spring Data (ex: ProductRepository.java)
-         │   │   ├── web/               # Contrôleurs MVC (ex: ProductController.java)
-         │   │   ├── security/          # Configuration Spring Security (ex: SecurityConfig.java)
-         │   │   └── SpringMvcApplication.java  # Point d'entrée de l'application
-         │   │
-         │   └── resources/
-         │       ├── templates/         # Vues Thymeleaf (HTML)
-         │       │   ├── products.html       # Liste des produits
-         │       │   ├── new-product.html    # Formulaire de création
-         │       │   ├── edit-product.html   # Formulaire d'édition  
-         │       │   ├── login.html          # Page de connexion
-         │       │   └── notAuthorized.html  # Page d'erreur 403
-         │       │
-         │       ├── static/            # Ressources statiques
-         │       │   ├── css/           # Feuilles de style
-         │       │   ├── js/            # Fichiers JavaScript
-         │       │   └── images/        # Images
-         │       │
-         │       └── application.properties # Configuration de l'application
-         │
-         └── test/                     # Tests unitaires et d'intégration
-     ```
+     <img width="310" alt="structure" src="https://github.com/user-attachments/assets/df05ac27-6b79-4e7b-b362-aa0b3f9adac7" />
+     <img width="307" alt="structure1" src="https://github.com/user-attachments/assets/cff13310-5833-4e0e-b9bc-96d11bfc40ba" />
+
    - Configuration du fichier 'application.properties'
    - Configuration de Sécurité (SecurityConfig)
 ## ⚙️ Configuration
