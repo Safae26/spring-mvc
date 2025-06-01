@@ -140,9 +140,8 @@ L'objectif est de créer une application web JEE de gestion de produits basée s
 
 <img width="912" alt="app" src="https://github.com/user-attachments/assets/bbb39010-65d1-4c30-8e01-f6a8334b511d" />
 <img width="911" alt="app1" src="https://github.com/user-attachments/assets/d9ee9b1c-2627-4612-a26f-a309a10554d5" />
-  
 
 9. **Améliorations possibles** : register et modification de profils,
 
-   show h2 db, keyword issues, templates en markdown, mise a jours repo, structure screen
+   show h2 db, keyword issues, templates en markdown, mise a jours repo
 **Auteur :** Safae ERAJI
