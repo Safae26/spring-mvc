@@ -140,12 +140,14 @@ Configuration du fichier `application.properties`
    - Création de l'interface `ProductRepository` basée sur Spring Data
      <img width="912" alt="repo" src="https://github.com/user-attachments/assets/d0f75667-567a-4ca0-8494-a8c5e3987e66" />
 
-
 4. **Tests**
    - Test de la couche DAO
 
 5. **Configuration de sécurité**
    - Désactivation de la protection par défaut de Spring Security (au début)
+   - SecurityConfig :
+     <img width="914" alt="secc" src="https://github.com/user-attachments/assets/5001a071-85c0-4841-a9ba-3d6feee6e73f" />
+     <img width="912" alt="seccc" src="https://github.com/user-attachments/assets/9eba52d3-996a-4c74-b006-f928d9bfd146" />
 
 6. **Couche Web et interface**
    - Création du contrôleur Spring MVC et des vues Thymeleaf pour :
