@@ -144,6 +144,8 @@ Configuration du fichier `application.properties`
        <img width="1279" alt="edit" src="https://github.com/user-attachments/assets/e343b5a7-204d-4961-a592-dd75bbf8e09d" />
        <img width="1280" alt="afterEdit" src="https://github.com/user-attachments/assets/b44ca960-8895-41a6-bab5-b01039283178" />
 
+     - Recherche de produits
+       ![Uploading search.png…]()
 
      - Pagination des résultats
      - Login 'USER' :
