@@ -129,6 +129,11 @@ Configuration du fichier `application.properties`
 
 
      - Pagination des résultats
+     - Login 'USER' :
+       <img width="1280" alt="safae" src="https://github.com/user-attachments/assets/dde927a2-3a79-4965-be4c-9987b4a6b148" />
+
+     - 
+      
 
 7. **Sécurisation de l'application**
    - Mise en place de Spring Security
