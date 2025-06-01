@@ -43,7 +43,7 @@ Créer une application Web JEE basée sur :
      - Thymeleaf
    - Structure du Projet :
      
-     <img width="310" alt="structure" src="https://github.com/user-attachments/assets/df05ac27-6b79-4e7b-b362-aa0b3f9adac7" />
+     <img width="311" alt="image" src="https://github.com/user-attachments/assets/81cf38a4-c219-4ca3-b5ab-91077bf5fae8" />
      
      <img width="307" alt="structure1" src="https://github.com/user-attachments/assets/cff13310-5833-4e0e-b9bc-96d11bfc40ba" />
 
@@ -160,6 +160,6 @@ Configuration du fichier `application.properties`
     // 404 : Page not found
     // 405 : Méthode pas autorisée
   
-ameliorations : register modification de profils, show h2 db, keyword issues, ajouter un css, templates, mise a jours repo, verification d'app, rapport
+ameliorations : register modification de profils, show h2 db, keyword issues, ajouter un css, templates en markdown, mise a jours repo, verification d'app, rapport
 
 **Auteur :** Safae ERAJI
