@@ -160,6 +160,6 @@ Configuration du fichier `application.properties`
     // 404 : Page not found
     // 405 : Méthode pas autorisée
   
-ameliorations : register modification de profils, show h2 db, keyword issues, ajouter un css, templates en markdown, mise a jours repo, verification d'app, rapport
+ameliorations : register modification de profils, show h2 db, keyword issues, ajouter un css, templates en markdown, mise a jours repo, verification d'app, rapport, structure screen
 
 **Auteur :** Safae ERAJI
