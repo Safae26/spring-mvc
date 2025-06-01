@@ -148,6 +148,12 @@ Configuration du fichier `application.properties`
    - SecurityConfig :
      <img width="914" alt="secc" src="https://github.com/user-attachments/assets/5001a071-85c0-4841-a9ba-3d6feee6e73f" />
      <img width="912" alt="seccc" src="https://github.com/user-attachments/assets/9eba52d3-996a-4c74-b006-f928d9bfd146" />
+   - Controller :
+     <img width="912" alt="controller" src="https://github.com/user-attachments/assets/22927d88-43a4-4e90-9bb0-76d7738428d2" />
+     <img width="911" alt="controller1" src="https://github.com/user-attachments/assets/61df39d0-b316-490e-9e6a-fdd74768910e" />
+     <img width="913" alt="controller2" src="https://github.com/user-attachments/assets/b354f3f1-9ae1-4a4c-a0e2-a19bcdaac3b9" />
+     ![Uploading controller3.png…]()
+
 
 6. **Couche Web et interface**
    - Création du contrôleur Spring MVC et des vues Thymeleaf pour :
@@ -210,6 +216,6 @@ Configuration du fichier `application.properties`
     // 404 : Page not found
     // 405 : Méthode pas autorisée
   
-ameliorations : register modification de profils, show h2 db, keyword issues, ajouter un css
+ameliorations : register modification de profils, show h2 db, keyword issues, ajouter un css, templates, mise a jours repo, verification d'app, rapport
 
 **Auteur :** Safae ERAJI
