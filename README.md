@@ -106,7 +106,7 @@ Configuration du fichier `application.properties`
 6. **Couche Web et interface**
    - Création du contrôleur Spring MVC et des vues Thymeleaf pour :
      - Affichage de la liste des produits
-       
+       ![Uploading pages1.png…]()
      - Suppression d'un produit
        <img width="1280" alt="delete" src="https://github.com/user-attachments/assets/75c76974-31c0-4425-bc5b-d91ed4cb95ce" />
        <img width="1280" alt="afterDelete" src="https://github.com/user-attachments/assets/7cb92aa6-9289-4e08-bc1f-e16cfdb8ec00" />
