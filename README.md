@@ -62,28 +62,18 @@ L'objectif est de créer une application web JEE de gestion de produits basée s
      <img width="911" alt="controller1" src="https://github.com/user-attachments/assets/61df39d0-b316-490e-9e6a-fdd74768910e" />
      <img width="913" alt="controller2" src="https://github.com/user-attachments/assets/b354f3f1-9ae1-4a4c-a0e2-a19bcdaac3b9" />
      <img width="911" alt="controller3" src="https://github.com/user-attachments/assets/53b4e1a4-2ed1-49e7-a2d1-88161c515409" />
-     ### 🔐 Utilisateurs par défaut
-      | Username | Password | Rôles       |
-      |----------|----------|-------------|
-      | safae    | 1234     | USER        |
-      | user     | 1234     | USER        |
-      | admin    | 1234     | ADMIN, USER |
       
-      ## 🌐 Points d'accès
-      | URL              | Description               | Rôle requis |
-      |------------------|---------------------------|-------------|
-      | /                | Redirection vers la liste | -           |
-      | /user/index      | Liste des produits        | USER        |
-      | /newProduct      | Formulaire d'ajout        | ADMIN       |
-      | /admin/delete    | Suppression d'un produit  | ADMIN       |
-      | /login           | Page de connexion         | -           |
-      | /logout          | Déconnexion               | -           |
-      | /notAuthorized   | Page 403 (Accès refusé)   | -           |
    - Création du contrôleur Spring MVC et des vues Thymeleaf pour :
      - Login Admin :
        <img width="1280" alt="login" src="https://github.com/user-attachments/assets/da31e8d1-357b-4b5d-bd88-8b3398afc5cb" />
        - Invalid Login :
          <img width="1280" alt="invalid" src="https://github.com/user-attachments/assets/c16b19c7-a90d-4026-aecb-e7d904ba8c22" />
+            ### 🔐 Utilisateurs par défaut
+            | Username | Password | Rôles       |
+            |----------|----------|-------------|
+            | safae    | 1234     | USER        |
+            | user     | 1234     | USER        |
+            | admin    | 1234     | ADMIN, USER |
 
      - Logout :
        <img width="1280" alt="logout" src="https://github.com/user-attachments/assets/58314b5e-a890-4d08-a539-76e42b5b6137" />
@@ -121,8 +111,7 @@ L'objectif est de créer une application web JEE de gestion de produits basée s
        <img width="1280" alt="afterEdit" src="https://github.com/user-attachments/assets/b44ca960-8895-41a6-bab5-b01039283178" />
 
      - Recherche de produits
-       ![Uploading search.png…]()
-
+       ![Screenshot 2025-06-01 172044](https://github.com/user-attachments/assets/4df4d122-09f9-4d66-ab90-7969a535a079)
      - Pagination des résultats
      - Login 'USER' :
        <img width="1280" alt="safae" src="https://github.com/user-attachments/assets/dde927a2-3a79-4965-be4c-9987b4a6b148" />
@@ -130,7 +119,16 @@ L'objectif est de créer une application web JEE de gestion de produits basée s
      - Access Denied :
        <img width="1279" alt="denied" src="https://github.com/user-attachments/assets/4b62aec7-a221-4eb4-8cab-3eea8c8ed6f7" />
 
-      
+       ## 🌐 Points d'accès
+      | URL              | Description               | Rôle requis |
+      |------------------|---------------------------|-------------|
+      | /                | Redirection vers la liste | -           |
+      | /user/index      | Liste des produits        | USER        |
+      | /newProduct      | Formulaire d'ajout        | ADMIN       |
+      | /admin/delete    | Suppression d'un produit  | ADMIN       |
+      | /login           | Page de connexion         | -           |
+      | /logout          | Déconnexion               | -           |
+      | /notAuthorized   | Page 403 (Accès refusé)   | -           |
 
 7. **Sécurisation de l'application**
    - Puisque il ne faut pas stocker les mots de passe en clair dans la base de données, on utilise : InMemoryUserDetailsManager pour la base de données in Memory comme H2, sinon dans MySQL (n'importe quel JDBC) pour le stocker hashé
