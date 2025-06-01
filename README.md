@@ -134,6 +134,7 @@ Configuration du fichier `application.properties`
 | /notAuthorized   | Page 403 (Accès refusé)   | -           |
 2. **Modèle de données**
    - Création de l'entité JPA `Product` (Modèle de Données)
+     <img width="912" alt="product" src="https://github.com/user-attachments/assets/3fe2efe9-5b03-424c-a598-123c123d6ebf" />
 
 3. **Couche d'accès aux données**
    - Création de l'interface `ProductRepository` basée sur Spring Data
@@ -202,6 +203,6 @@ Configuration du fichier `application.properties`
    - Puisque il ne faut pas stocker les mots de passe en clair dans la base de données, on utilise : InMemoryUserDetailsManager pour la base de données in Memory comme H2, sinon dans MySQL (n'importe quel JDBC) pour le stocker hashé
    - 403 : Not Authorized pour les utilisateurs, juste admins
   
-ameliorations : register modification de profils, show h2 db, keyword issues
+ameliorations : register modification de profils, show h2 db, keyword issues, ajouter un css
 
 **Auteur :** Safae ERAJI
