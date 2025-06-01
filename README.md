@@ -204,6 +204,9 @@ Configuration du fichier `application.properties`
    - Mise en place de Spring Security
    - Puisque il ne faut pas stocker les mots de passe en clair dans la base de données, on utilise : InMemoryUserDetailsManager pour la base de données in Memory comme H2, sinon dans MySQL (n'importe quel JDBC) pour le stocker hashé
    - 403 : Not Authorized pour les utilisateurs, juste admins
+   - // 403 : Not Authorized
+    // 404 : Page not found
+    // 405 : Méthode pas autorisée
   
 ameliorations : register modification de profils, show h2 db, keyword issues, ajouter un css
 
