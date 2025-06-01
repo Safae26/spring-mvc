@@ -138,6 +138,8 @@ Configuration du fichier `application.properties`
 
 3. **Couche d'accès aux données**
    - Création de l'interface `ProductRepository` basée sur Spring Data
+     <img width="912" alt="repo" src="https://github.com/user-attachments/assets/d0f75667-567a-4ca0-8494-a8c5e3987e66" />
+
 
 4. **Tests**
    - Test de la couche DAO
