@@ -52,7 +52,7 @@ L'objectif est de créer une application web JEE de gestion de produits basée s
    - Création de l'interface `ProductRepository` basée sur Spring Data
      <img width="912" alt="repo" src="https://github.com/user-attachments/assets/d0f75667-567a-4ca0-8494-a8c5e3987e66" />
 
-4. ⚙️ **Configuration de sécurité**
+4. ⚙️ **Configuration de sécurité** (Spring Security)
    - SecurityConfig.java :
      <img width="914" alt="secc" src="https://github.com/user-attachments/assets/5001a071-85c0-4841-a9ba-3d6feee6e73f" />
      <img width="912" alt="seccc" src="https://github.com/user-attachments/assets/9eba52d3-996a-4c74-b006-f928d9bfd146" />
@@ -133,19 +133,19 @@ L'objectif est de créer une application web JEE de gestion de produits basée s
       
 
 7. **Sécurisation de l'application**
-   - Mise en place de Spring Security
    - Puisque il ne faut pas stocker les mots de passe en clair dans la base de données, on utilise : InMemoryUserDetailsManager pour la base de données in Memory comme H2, sinon dans MySQL (n'importe quel JDBC) pour le stocker hashé
-   - 403 : Not Authorized pour les utilisateurs, juste admins
-   - // 403 : Not Authorized
+   - // 403 : Not Authorized pour les utilisateurs, juste admins
     // 404 : Page not found
     // 405 : Méthode pas autorisée
 
-73 **App** 
+ 8. **App** 
 
 <img width="912" alt="app" src="https://github.com/user-attachments/assets/bbb39010-65d1-4c30-8e01-f6a8334b511d" />
 <img width="911" alt="app1" src="https://github.com/user-attachments/assets/d9ee9b1c-2627-4612-a26f-a309a10554d5" />
   
 
-ameliorations : register et modification de profils, show h2 db, keyword issues, templates en markdown, mise a jours repo, structure screen, security config screen
+9. **Améliorations possibles** : register et modification de profils,
+
+   show h2 db, keyword issues, templates en markdown, mise a jours repo, structure screen, security config screen
 
 **Auteur :** Safae ERAJI
