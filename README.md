@@ -141,7 +141,9 @@ Configuration du fichier `application.properties`
      - Login 'USER' :
        <img width="1280" alt="safae" src="https://github.com/user-attachments/assets/dde927a2-3a79-4965-be4c-9987b4a6b148" />
 
-     - 
+     - Access Denied :
+       <img width="1279" alt="denied" src="https://github.com/user-attachments/assets/4b62aec7-a221-4eb4-8cab-3eea8c8ed6f7" />
+
       
 
 7. **Sécurisation de l'application**
