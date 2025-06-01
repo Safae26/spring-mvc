@@ -115,17 +115,20 @@ Configuration du fichier `application.properties`
 
      - Affichage de la liste des produits
        <img width="1280" alt="pages1" src="https://github.com/user-attachments/assets/6bd6fb48-2394-4e60-a0b4-64141bc80159" />
+       <img width="1279" alt="pages2" src="https://github.com/user-attachments/assets/127eb01c-467c-4946-af8c-89c2ac19c17d" />
+       <img width="1280" alt="pages3" src="https://github.com/user-attachments/assets/b7032e8e-bf08-47c4-8474-a558a6e5d70f" />
+       <img width="1280" alt="pages4" src="https://github.com/user-attachments/assets/c51ebad9-da97-4cd2-ad2c-65a27f3ce82a" />
+
 
      - Ajout d'un Produit :
        <img width="1280" alt="beforeNew" src="https://github.com/user-attachments/assets/537e5c32-fedb-473d-b914-35f78758395a" />
        <img width="1279" alt="afterNew" src="https://github.com/user-attachments/assets/a3e1e9ec-0869-40f0-b1ff-0ae447e91c5e" />
        - Validation :
          <img width="1280" alt="fields" src="https://github.com/user-attachments/assets/ab490007-b71e-43fa-b136-d7522370cade" />
-         
-      - home :
-        <img width="1280" alt="home" src="https://github.com/user-attachments/assets/b3663226-f901-41e6-bb1e-ccd343d291fe" />
-      - 
 
+     - home :
+        <img width="1280" alt="home" src="https://github.com/user-attachments/assets/b3663226-f901-41e6-bb1e-ccd343d291fe" />
+     
      - Suppression d'un produit
        <img width="1280" alt="delete" src="https://github.com/user-attachments/assets/75c76974-31c0-4425-bc5b-d91ed4cb95ce" />
        <img width="1280" alt="afterDelete" src="https://github.com/user-attachments/assets/7cb92aa6-9289-4e08-bc1f-e16cfdb8ec00" />
