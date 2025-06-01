@@ -152,7 +152,11 @@ Configuration du fichier `application.properties`
      <img width="912" alt="controller" src="https://github.com/user-attachments/assets/22927d88-43a4-4e90-9bb0-76d7738428d2" />
      <img width="911" alt="controller1" src="https://github.com/user-attachments/assets/61df39d0-b316-490e-9e6a-fdd74768910e" />
      <img width="913" alt="controller2" src="https://github.com/user-attachments/assets/b354f3f1-9ae1-4a4c-a0e2-a19bcdaac3b9" />
-     ![Uploading controller3.png…]()
+     <img width="911" alt="controller3" src="https://github.com/user-attachments/assets/53b4e1a4-2ed1-49e7-a2d1-88161c515409" />
+
+   - App :
+     <img width="912" alt="app" src="https://github.com/user-attachments/assets/bbb39010-65d1-4c30-8e01-f6a8334b511d" />
+     <img width="911" alt="app1" src="https://github.com/user-attachments/assets/d9ee9b1c-2627-4612-a26f-a309a10554d5" />
 
 
 6. **Couche Web et interface**
