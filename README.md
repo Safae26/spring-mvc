@@ -107,15 +107,19 @@ Configuration du fichier `application.properties`
    - Création du contrôleur Spring MVC et des vues Thymeleaf pour :
      - Affichage de la liste des produits
      - Suppression d'un produit
+       
      - Page template basée sur Thymeleaf layout et Bootstrap
      - Saisie et ajout d'un produit avec validation du formulaire
      - Recherche de produits
-     - Édition et mise à jour des produits, et profils
+       <img width="1279" alt="search" src="https://github.com/user-attachments/assets/c02c2da5-7137-4a28-b1ce-83717d42f0ad" />
+     - Édition et mise à jour des produits
      - Pagination des résultats
 
 7. **Sécurisation de l'application**
    - Mise en place de Spring Security
    - Puisque il ne faut pas stocker les mots de passe en clair dans la base de données, on utilise : InMemoryUserDetailsManager pour la base de données in Memory comme H2, sinon dans MySQL (n'importe quel JDBC) pour le stocker hashé
    - 403 : Not Authorized pour les utilisateurs, juste admins
+  
+ameliorations : register modification de profils
 
 **Auteur :** Safae ERAJI
