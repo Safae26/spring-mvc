@@ -55,7 +55,7 @@ L'objectif est de créer une application web JEE de gestion de produits basée s
 4. ⚙️ **Configuration de sécurité** (Spring Security)
    - SecurityConfig.java :
      <img width="914" alt="secc" src="https://github.com/user-attachments/assets/5001a071-85c0-4841-a9ba-3d6feee6e73f" />
-     <img width="912" alt="seccc" src="https://github.com/user-attachments/assets/9eba52d3-996a-4c74-b006-f928d9bfd146" />
+     <img width="911" alt="image" src="https://github.com/user-attachments/assets/d616b2c3-e136-48e8-9247-fe5c8f97361e" />
 
 5. **Couche Web et interface**
      <img width="912" alt="controller" src="https://github.com/user-attachments/assets/22927d88-43a4-4e90-9bb0-76d7738428d2" />
