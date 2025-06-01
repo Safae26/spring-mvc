@@ -202,6 +202,6 @@ Configuration du fichier `application.properties`
    - Puisque il ne faut pas stocker les mots de passe en clair dans la base de données, on utilise : InMemoryUserDetailsManager pour la base de données in Memory comme H2, sinon dans MySQL (n'importe quel JDBC) pour le stocker hashé
    - 403 : Not Authorized pour les utilisateurs, juste admins
   
-ameliorations : register modification de profils, show h2 db
+ameliorations : register modification de profils, show h2 db, keyword issues
 
 **Auteur :** Safae ERAJI
