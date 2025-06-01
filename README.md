@@ -107,6 +107,8 @@ Configuration du fichier `application.properties`
    - Création du contrôleur Spring MVC et des vues Thymeleaf pour :
      - Login Admin :
        <img width="1280" alt="login" src="https://github.com/user-attachments/assets/da31e8d1-357b-4b5d-bd88-8b3398afc5cb" />
+       - Invalid Login :
+         <img width="1280" alt="invalid" src="https://github.com/user-attachments/assets/c16b19c7-a90d-4026-aecb-e7d904ba8c22" />
 
      - Logout :
        <img width="1280" alt="logout" src="https://github.com/user-attachments/assets/58314b5e-a890-4d08-a539-76e42b5b6137" />
