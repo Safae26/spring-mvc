@@ -96,14 +96,18 @@ Pour des raisons de sécurité, les mots de passe ne sont jamais stockés en cla
   <img width="1280" alt="pages4" src="https://github.com/user-attachments/assets/c51ebad9-da97-4cd2-ad2c-65a27f3ce82a" />
   
 - Ajout de produit
-  <img width="1280" alt="beforeNew" src="https://github.com/user-attachments/assets/537e5c32-fedb-473d-b914-35f78758395a" />
-  <img width="1280" alt="new" src="https://github.com/user-attachments/assets/b1343649-ef88-402d-8f3c-71a36008d15b" />
-  <img width="1279" alt="afterNew" src="https://github.com/user-attachments/assets/a3e1e9ec-0869-40f0-b1ff-0ae447e91c5e" />
+    - Avant l'ajout :
+      <img width="1280" alt="beforeNew" src="https://github.com/user-attachments/assets/537e5c32-fedb-473d-b914-35f78758395a" />
+      <img width="1280" alt="new" src="https://github.com/user-attachments/assets/b1343649-ef88-402d-8f3c-71a36008d15b" />
+    - Après l'ajout :
+      <img width="1279" alt="afterNew" src="https://github.com/user-attachments/assets/a3e1e9ec-0869-40f0-b1ff-0ae447e91c5e" />
 
 - Édition et mise à jour de produits :
-  <img width="1280" alt="beforeEdit" src="https://github.com/user-attachments/assets/7cb3906a-d64b-4993-bb86-46d13aa7d3cf" />
-  <img width="1279" alt="edit" src="https://github.com/user-attachments/assets/e343b5a7-204d-4961-a592-dd75bbf8e09d" />
-  <img width="1280" alt="afterEdit" src="https://github.com/user-attachments/assets/b44ca960-8895-41a6-bab5-b01039283178" />
+    - Avant la modification :
+      <img width="1280" alt="beforeEdit" src="https://github.com/user-attachments/assets/7cb3906a-d64b-4993-bb86-46d13aa7d3cf" />
+      <img width="1279" alt="edit" src="https://github.com/user-attachments/assets/e343b5a7-204d-4961-a592-dd75bbf8e09d" />
+    - Après la modification :
+      <img width="1280" alt="afterEdit" src="https://github.com/user-attachments/assets/b44ca960-8895-41a6-bab5-b01039283178" />
        
 - Suppression d'un produit
   <img width="1280" alt="products" src="https://github.com/user-attachments/assets/c22d6f05-1e6e-4395-9aaf-58097475e109" />
