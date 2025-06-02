@@ -66,7 +66,11 @@ Pour des raisons de sécurité, les mots de passe ne sont jamais stockés en cla
 <img width="913" alt="controller2" src="https://github.com/user-attachments/assets/b354f3f1-9ae1-4a4c-a0e2-a19bcdaac3b9" />
 <img width="911" alt="controller3" src="https://github.com/user-attachments/assets/53b4e1a4-2ed1-49e7-a2d1-88161c515409" />
 
-### 6. **Interfaces utilisateur**
+## 6. **SpringMvcApplication**
+<img width="912" alt="app" src="https://github.com/user-attachments/assets/bbb39010-65d1-4c30-8e01-f6a8334b511d" />
+<img width="911" alt="app1" src="https://github.com/user-attachments/assets/d9ee9b1c-2627-4612-a26f-a309a10554d5" />
+
+### 7. **Interfaces utilisateur**
 #### Authentification
 - Page de login
    - Login 'ADMIN' :
@@ -119,10 +123,6 @@ Pour des raisons de sécurité, les mots de passe ne sont jamais stockés en cla
 - Access Denied :
   <img width="1279" alt="denied" src="https://github.com/user-attachments/assets/4b62aec7-a221-4eb4-8cab-3eea8c8ed6f7" />
 
-- SpringMvcApplication
-  <img width="912" alt="app" src="https://github.com/user-attachments/assets/bbb39010-65d1-4c30-8e01-f6a8334b511d" />
-  <img width="911" alt="app1" src="https://github.com/user-attachments/assets/d9ee9b1c-2627-4612-a26f-a309a10554d5" />
-
 #### 🌐 Points d'accès
 
 | URL              | Description               | Rôle requis |
@@ -136,7 +136,7 @@ Pour des raisons de sécurité, les mots de passe ne sont jamais stockés en cla
 | /notAuthorized   | Page 403 (Accès refusé)   | -           |
 
 
-7. **Templates basées sur Thymeleaf layout et Bootstrap**
+8. **Templates basées sur Thymeleaf layout et Bootstrap**
    - layout1.html
    - home.html
    - login.html
@@ -145,7 +145,7 @@ Pour des raisons de sécurité, les mots de passe ne sont jamais stockés en cla
    - edit-product.html
    - notAuthorized
 
-8. **Améliorations possibles** :
+9. **Améliorations possibles** :
    - Ajout d'un système d'inscription (register)
    - Modification des profils utilisateurs
 
