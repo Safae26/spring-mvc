@@ -16,63 +16,66 @@ L'objectif est de créer une application web JEE de gestion de produits basée s
 - **Validation des formulaires**
 - **Interface responsive** avec Bootstrap
 - **Recherche de produits**
-- **Gestion des erreurs** (403, 404)
+- **Gestion des erreurs** (403, 404, 405)
 
-## Étapes de développement
+## Architecture du projet
 
-1. **Initialisation du projet**
-   - Création d'un projet Spring Boot avec les dépendances :
-     - **Backend**
-     - Spring Boot 3
-     - 🔒 Spring Security
-     - ✔️ Spring Validation
-     - Spring Data JPA + Hibernate
-     - Spring Web
-     - **Base de données**
-     - H2
-     - Lombok
-     - **Frontend**
-     - Bootstrap 5
-     - Thymeleaf
-   
-   - Structure du Projet :
-     
-     <img width="308" alt="image" src="https://github.com/user-attachments/assets/aede0c7c-fa5f-43c3-a3d9-db7b9de0dc17" />
+### 1. Initialisation du projet
+
+**Dépendances principales :**
+- **Backend**:
+  - Spring Boot 3
+  - Spring Security
+  - Spring Validation
+  - Spring Data JPA + Hibernate
+  - Spring Web
+- **Base de données**:
+  - H2 (en mémoire)
+  - Lombok
+- **Frontend**:
+  - Bootstrap 5
+  - Thymeleaf
+
+**Structure du projet :**
+<img width="308" alt="image" src="https://github.com/user-attachments/assets/aede0c7c-fa5f-43c3-a3d9-db7b9de0dc17" />
+
+<img width="307" alt="structure1" src="https://github.com/user-attachments/assets/cff13310-5833-4e0e-b9bc-96d11bfc40ba" />
+
+**⚙️ Configuration du fichier 'application.properties'**
+<img width="914" alt="prop" src="https://github.com/user-attachments/assets/22e73099-2a97-4e6a-84d4-7c1031dce38f" />
+
+### 2. Modèle de données - Création de l'entité JPA `Product` (Modèle de Données)
+<img width="912" alt="product" src="https://github.com/user-attachments/assets/3fe2efe9-5b03-424c-a598-123c123d6ebf" />
+
+### 3. Couche d'accès aux données** - Création de l'interface `ProductRepository` basée sur Spring Data
+<img width="912" alt="repo" src="https://github.com/user-attachments/assets/d0f75667-567a-4ca0-8494-a8c5e3987e66" />
+
+### 4. ⚙️ **Configuration de sécurité** (SecurityConfig.java)
+<img width="914" alt="secc" src="https://github.com/user-attachments/assets/5001a071-85c0-4841-a9ba-3d6feee6e73f" />
+<img width="911" alt="image" src="https://github.com/user-attachments/assets/d616b2c3-e136-48e8-9247-fe5c8f97361e" />
+
+### 5. 🌐 **Couche Web** (Controllers)
+<img width="912" alt="controller" src="https://github.com/user-attachments/assets/22927d88-43a4-4e90-9bb0-76d7738428d2" />
+<img width="911" alt="controller1" src="https://github.com/user-attachments/assets/61df39d0-b316-490e-9e6a-fdd74768910e" />
+<img width="913" alt="controller2" src="https://github.com/user-attachments/assets/b354f3f1-9ae1-4a4c-a0e2-a19bcdaac3b9" />
+<img width="911" alt="controller3" src="https://github.com/user-attachments/assets/53b4e1a4-2ed1-49e7-a2d1-88161c515409" />
+
+### 6. **Interfaces utilisateur**
+#### Authentification
+- Page de login
+   - Login Admin :
+     <img width="1280" alt="login" src="https://github.com/user-attachments/assets/da31e8d1-357b-4b5d-bd88-8b3398afc5cb" />
+   - Invalid Login :
+     <img width="1280" alt="invalid" src="https://github.com/user-attachments/assets/c16b19c7-a90d-4026-aecb-e7d904ba8c22" />
+- 🔐 Utilisateurs par défaut
+| Username | Password | Rôles       |
+|----------|----------|-------------|
+| safae    | 1234     | USER        |
+| user     | 1234     | USER        |
+| admin    | 1234     | ADMIN, USER |
 
 
 
-     <img width="307" alt="structure1" src="https://github.com/user-attachments/assets/cff13310-5833-4e0e-b9bc-96d11bfc40ba" />
-
-   - ⚙️ Configuration du fichier 'application.properties'
-     <img width="914" alt="prop" src="https://github.com/user-attachments/assets/22e73099-2a97-4e6a-84d4-7c1031dce38f" />
-
-2. **Modèle de données** - Création de l'entité JPA `Product` (Modèle de Données)
-   <img width="912" alt="product" src="https://github.com/user-attachments/assets/3fe2efe9-5b03-424c-a598-123c123d6ebf" />
-
-4. **Couche d'accès aux données** - Création de l'interface `ProductRepository` basée sur Spring Data
-   <img width="912" alt="repo" src="https://github.com/user-attachments/assets/d0f75667-567a-4ca0-8494-a8c5e3987e66" />
-
-6. ⚙️ **Configuration de sécurité** (SecurityConfig.java)
-   <img width="914" alt="secc" src="https://github.com/user-attachments/assets/5001a071-85c0-4841-a9ba-3d6feee6e73f" />
-   <img width="911" alt="image" src="https://github.com/user-attachments/assets/d616b2c3-e136-48e8-9247-fe5c8f97361e" />
-
-7. **Couche Web**
-     <img width="912" alt="controller" src="https://github.com/user-attachments/assets/22927d88-43a4-4e90-9bb0-76d7738428d2" />
-     <img width="911" alt="controller1" src="https://github.com/user-attachments/assets/61df39d0-b316-490e-9e6a-fdd74768910e" />
-     <img width="913" alt="controller2" src="https://github.com/user-attachments/assets/b354f3f1-9ae1-4a4c-a0e2-a19bcdaac3b9" />
-     <img width="911" alt="controller3" src="https://github.com/user-attachments/assets/53b4e1a4-2ed1-49e7-a2d1-88161c515409" />
-      
-   - Création du contrôleur Spring MVC et des vues Thymeleaf pour :
-     - Login Admin :
-       <img width="1280" alt="login" src="https://github.com/user-attachments/assets/da31e8d1-357b-4b5d-bd88-8b3398afc5cb" />
-       - Invalid Login :
-         <img width="1280" alt="invalid" src="https://github.com/user-attachments/assets/c16b19c7-a90d-4026-aecb-e7d904ba8c22" />
-            ### 🔐 Utilisateurs par défaut
-            | Username | Password | Rôles       |
-            |----------|----------|-------------|
-            | safae    | 1234     | USER        |
-            | user     | 1234     | USER        |
-            | admin    | 1234     | ADMIN, USER |
 
      - Logout :
        <img width="1280" alt="logout" src="https://github.com/user-attachments/assets/58314b5e-a890-4d08-a539-76e42b5b6137" />
