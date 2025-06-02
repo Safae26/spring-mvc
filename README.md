@@ -80,12 +80,11 @@ Pour des raisons de sécurité, les mots de passe ne sont jamais stockés en cla
    - Invalid Login :
      <img width="1280" alt="invalid" src="https://github.com/user-attachments/assets/c16b19c7-a90d-4026-aecb-e7d904ba8c22" />
    - 🔐 Utilisateurs par défaut
-  
-    | Username | Password | Rôles       |
-    |----------|----------|-------------|
-    | safae    | 1234     | USER        |
-    | user     | 1234     | USER        |
-    | admin    | 1234     | ADMIN, USER |
+     | Username | Password | Rôles       |
+     |----------|----------|-------------|
+     | safae    | 1234     | USER        |
+     | user     | 1234     | USER        |
+     | admin    | 1234     | ADMIN, USER |
 
 #### Gestion des produits
 - Home :
