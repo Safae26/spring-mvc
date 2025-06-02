@@ -125,17 +125,17 @@ Pour des raisons de sécurité, les mots de passe ne sont jamais stockés en cla
 - Access Denied :
   <img width="1279" alt="denied" src="https://github.com/user-attachments/assets/4b62aec7-a221-4eb4-8cab-3eea8c8ed6f7" />
 
-#### 🌐 Points d'accès
+ #### 🌐 Points d'accès
 
-| URL              | Description               | Rôle requis |
-|------------------|---------------------------|-------------|
-| /                | Redirection vers la liste | -           |
-| /user/index      | Liste des produits        | USER        |
-| /newProduct      | Formulaire d'ajout        | ADMIN       |
-| /admin/delete    | Suppression d'un produit  | ADMIN       |
-| /login           | Page de connexion         | -           |
-| /logout          | Déconnexion               | -           |
-| /notAuthorized   | Page 403 (Accès refusé)   | -           |
+ | URL              | Description               | Rôle requis |
+ |------------------|---------------------------|-------------|
+ | /                | Redirection vers la liste | -           |
+ | /user/index      | Liste des produits        | USER        |
+ | /newProduct      | Formulaire d'ajout        | ADMIN       |
+ | /admin/delete    | Suppression d'un produit  | ADMIN       |
+ | /login           | Page de connexion         | -           |
+ | /logout          | Déconnexion               | -           |
+ | /notAuthorized   | Page 403 (Accès refusé)   | -           |
 
 
 ### 8. **Templates basées sur Thymeleaf layout et Bootstrap**
@@ -150,5 +150,6 @@ Pour des raisons de sécurité, les mots de passe ne sont jamais stockés en cla
 ### 9. **Améliorations possibles** :
    - Ajout d'un système d'inscription (register)
    - Modification des profils utilisateurs
+
 
 **Auteur :** Safae ERAJI
