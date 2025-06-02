@@ -99,6 +99,8 @@ Pour des raisons de sécurité, les mots de passe ne sont jamais stockés en cla
     - Avant l'ajout :
       <img width="1280" alt="beforeNew" src="https://github.com/user-attachments/assets/537e5c32-fedb-473d-b914-35f78758395a" />
       <img width="1280" alt="new" src="https://github.com/user-attachments/assets/b1343649-ef88-402d-8f3c-71a36008d15b" />
+    - Validation des champs
+      <img width="1280" alt="fields" src="https://github.com/user-attachments/assets/ab490007-b71e-43fa-b136-d7522370cade" />
     - Après l'ajout :
       <img width="1279" alt="afterNew" src="https://github.com/user-attachments/assets/a3e1e9ec-0869-40f0-b1ff-0ae447e91c5e" />
 
@@ -113,9 +115,6 @@ Pour des raisons de sécurité, les mots de passe ne sont jamais stockés en cla
   <img width="1280" alt="products" src="https://github.com/user-attachments/assets/c22d6f05-1e6e-4395-9aaf-58097475e109" />
   <img width="1280" alt="delete" src="https://github.com/user-attachments/assets/75c76974-31c0-4425-bc5b-d91ed4cb95ce" />
   <img width="1280" alt="afterDelete" src="https://github.com/user-attachments/assets/7cb92aa6-9289-4e08-bc1f-e16cfdb8ec00" />
-
-- Validation des champs
-  <img width="1280" alt="fields" src="https://github.com/user-attachments/assets/ab490007-b71e-43fa-b136-d7522370cade" />
 
 - Recherche de produits
   <img width="1279" alt="search" src="https://github.com/user-attachments/assets/c02c2da5-7137-4a28-b1ce-83717d42f0ad" />
