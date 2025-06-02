@@ -46,19 +46,17 @@ L'objectif est de créer une application web JEE de gestion de produits basée s
    - ⚙️ Configuration du fichier 'application.properties'
      <img width="914" alt="prop" src="https://github.com/user-attachments/assets/22e73099-2a97-4e6a-84d4-7c1031dce38f" />
 
-2. **Modèle de données**
-   - Création de l'entité JPA `Product` (Modèle de Données)
-     <img width="912" alt="product" src="https://github.com/user-attachments/assets/3fe2efe9-5b03-424c-a598-123c123d6ebf" />
+2. **Modèle de données** - Création de l'entité JPA `Product` (Modèle de Données)
+   <img width="912" alt="product" src="https://github.com/user-attachments/assets/3fe2efe9-5b03-424c-a598-123c123d6ebf" />
 
-3. **Couche d'accès aux données**
-   - Création de l'interface `ProductRepository` basée sur Spring Data
-     <img width="912" alt="repo" src="https://github.com/user-attachments/assets/d0f75667-567a-4ca0-8494-a8c5e3987e66" />
+4. **Couche d'accès aux données** - Création de l'interface `ProductRepository` basée sur Spring Data
+   <img width="912" alt="repo" src="https://github.com/user-attachments/assets/d0f75667-567a-4ca0-8494-a8c5e3987e66" />
 
-4. ⚙️ **Configuration de sécurité** (SecurityConfig.java)
+6. ⚙️ **Configuration de sécurité** (SecurityConfig.java)
    <img width="914" alt="secc" src="https://github.com/user-attachments/assets/5001a071-85c0-4841-a9ba-3d6feee6e73f" />
    <img width="911" alt="image" src="https://github.com/user-attachments/assets/d616b2c3-e136-48e8-9247-fe5c8f97361e" />
 
-6. **Couche Web**
+7. **Couche Web**
      <img width="912" alt="controller" src="https://github.com/user-attachments/assets/22927d88-43a4-4e90-9bb0-76d7738428d2" />
      <img width="911" alt="controller1" src="https://github.com/user-attachments/assets/61df39d0-b316-490e-9e6a-fdd74768910e" />
      <img width="913" alt="controller2" src="https://github.com/user-attachments/assets/b354f3f1-9ae1-4a4c-a0e2-a19bcdaac3b9" />
@@ -131,13 +129,13 @@ L'objectif est de créer une application web JEE de gestion de produits basée s
       | /logout          | Déconnexion               | -           |
       | /notAuthorized   | Page 403 (Accès refusé)   | -           |
 
-7. **Sécurisation de l'application**
+8. **Sécurisation de l'application**
    - Puisque il ne faut pas stocker les mots de passe en clair dans la base de données, on utilise : InMemoryUserDetailsManager pour la base de données in Memory comme H2, sinon dans MySQL (n'importe quel JDBC) pour le stocker hashé
    - // 403 : Not Authorized pour les utilisateurs, juste admins
     // 404 : Page not found
     // 405 : Méthode pas autorisée
 
-8. **Templates**
+9. **Templates**
    - layout1.html
    - home.html
    - login.html
@@ -146,7 +144,7 @@ L'objectif est de créer une application web JEE de gestion de produits basée s
    - edit-product.html
    - notAuthorized
 
-9. **App** 
+10. **App** 
 
 <img width="912" alt="app" src="https://github.com/user-attachments/assets/bbb39010-65d1-4c30-8e01-f6a8334b511d" />
 <img width="911" alt="app1" src="https://github.com/user-attachments/assets/d9ee9b1c-2627-4612-a26f-a309a10554d5" />
