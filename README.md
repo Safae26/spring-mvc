@@ -1,4 +1,4 @@
-# Gestion de Produits - Application Web JEE (All In One Spring MVC Thymeleaf Spring Security)
+# 🛒 Gestion de Produits - Application Web JEE (All In One Spring MVC Thymeleaf Spring Security)
 
 ![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
 ![Spring Data JPA](https://img.shields.io/badge/Spring_Data_JPA-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
