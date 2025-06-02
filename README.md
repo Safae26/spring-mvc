@@ -54,12 +54,11 @@ L'objectif est de créer une application web JEE de gestion de produits basée s
    - Création de l'interface `ProductRepository` basée sur Spring Data
      <img width="912" alt="repo" src="https://github.com/user-attachments/assets/d0f75667-567a-4ca0-8494-a8c5e3987e66" />
 
-4. ⚙️ **Configuration de sécurité** (Spring Security)
-   - SecurityConfig.java :
-     <img width="914" alt="secc" src="https://github.com/user-attachments/assets/5001a071-85c0-4841-a9ba-3d6feee6e73f" />
-     <img width="911" alt="image" src="https://github.com/user-attachments/assets/d616b2c3-e136-48e8-9247-fe5c8f97361e" />
+4. ⚙️ **Configuration de sécurité** (SecurityConfig.java)
+   <img width="914" alt="secc" src="https://github.com/user-attachments/assets/5001a071-85c0-4841-a9ba-3d6feee6e73f" />
+   <img width="911" alt="image" src="https://github.com/user-attachments/assets/d616b2c3-e136-48e8-9247-fe5c8f97361e" />
 
-5. **Couche Web**
+6. **Couche Web**
      <img width="912" alt="controller" src="https://github.com/user-attachments/assets/22927d88-43a4-4e90-9bb0-76d7738428d2" />
      <img width="911" alt="controller1" src="https://github.com/user-attachments/assets/61df39d0-b316-490e-9e6a-fdd74768910e" />
      <img width="913" alt="controller2" src="https://github.com/user-attachments/assets/b354f3f1-9ae1-4a4c-a0e2-a19bcdaac3b9" />
