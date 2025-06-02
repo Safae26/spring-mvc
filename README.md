@@ -79,16 +79,16 @@ Pour des raisons de sécurité, les mots de passe ne sont jamais stockés en cla
    - Login 'USER' : (De même)
    - Invalid Login :
      <img width="1280" alt="invalid" src="https://github.com/user-attachments/assets/c16b19c7-a90d-4026-aecb-e7d904ba8c22" />
-- 🔐 Utilisateurs par défaut
-
-| Username | Password | Rôles       |
-|----------|----------|-------------|
-| safae    | 1234     | USER        |
-| user     | 1234     | USER        |
-| admin    | 1234     | ADMIN, USER |
+   - 🔐 Utilisateurs par défaut
+  
+    | Username | Password | Rôles       |
+    |----------|----------|-------------|
+    | safae    | 1234     | USER        |
+    | user     | 1234     | USER        |
+    | admin    | 1234     | ADMIN, USER |
 
 #### Gestion des produits
-- home :
+- Home :
   <img width="1280" alt="home" src="https://github.com/user-attachments/assets/b3663226-f901-41e6-bb1e-ccd343d291fe" />
 - Liste des produits avec pagination
   <img width="1280" alt="pages1" src="https://github.com/user-attachments/assets/6bd6fb48-2394-4e60-a0b4-64141bc80159" />
