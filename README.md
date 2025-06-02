@@ -87,7 +87,7 @@ Pour des raisons de sécurité, les mots de passe ne sont jamais stockés en cla
      | admin    | 1234     | ADMIN, USER |
 
 #### Gestion des produits
-- Home :
+- 🏠 Home :
   <img width="1280" alt="home" src="https://github.com/user-attachments/assets/b3663226-f901-41e6-bb1e-ccd343d291fe" />
 - Liste des produits avec pagination
   <img width="1280" alt="pages1" src="https://github.com/user-attachments/assets/6bd6fb48-2394-4e60-a0b4-64141bc80159" />
@@ -95,34 +95,34 @@ Pour des raisons de sécurité, les mots de passe ne sont jamais stockés en cla
   <img width="1280" alt="pages3" src="https://github.com/user-attachments/assets/b7032e8e-bf08-47c4-8474-a558a6e5d70f" />
   <img width="1280" alt="pages4" src="https://github.com/user-attachments/assets/c51ebad9-da97-4cd2-ad2c-65a27f3ce82a" />
   
-- Ajout de produit
+- 🆕 Ajout de produit
     - Avant l'ajout :
       <img width="1280" alt="beforeNew" src="https://github.com/user-attachments/assets/537e5c32-fedb-473d-b914-35f78758395a" />
       <img width="1280" alt="new" src="https://github.com/user-attachments/assets/b1343649-ef88-402d-8f3c-71a36008d15b" />
-    - Validation des champs
+    - ✔️ Validation des champs
       <img width="1280" alt="fields" src="https://github.com/user-attachments/assets/ab490007-b71e-43fa-b136-d7522370cade" />
     - Après l'ajout :
       <img width="1279" alt="afterNew" src="https://github.com/user-attachments/assets/a3e1e9ec-0869-40f0-b1ff-0ae447e91c5e" />
 
-- Édition et mise à jour de produits :
+- ✏️ Édition et mise à jour de produits :
     - Avant la modification :
       <img width="1280" alt="beforeEdit" src="https://github.com/user-attachments/assets/7cb3906a-d64b-4993-bb86-46d13aa7d3cf" />
       <img width="1279" alt="edit" src="https://github.com/user-attachments/assets/e343b5a7-204d-4961-a592-dd75bbf8e09d" />
     - Après la modification :
       <img width="1280" alt="afterEdit" src="https://github.com/user-attachments/assets/b44ca960-8895-41a6-bab5-b01039283178" />
        
-- Suppression d'un produit
+- 🗑️ Suppression d'un produit
   <img width="1280" alt="products" src="https://github.com/user-attachments/assets/c22d6f05-1e6e-4395-9aaf-58097475e109" />
   <img width="1280" alt="delete" src="https://github.com/user-attachments/assets/75c76974-31c0-4425-bc5b-d91ed4cb95ce" />
   <img width="1280" alt="afterDelete" src="https://github.com/user-attachments/assets/7cb92aa6-9289-4e08-bc1f-e16cfdb8ec00" />
 
-- Recherche de produits
+- 🔍 Recherche de produits
   <img width="1279" alt="search" src="https://github.com/user-attachments/assets/c02c2da5-7137-4a28-b1ce-83717d42f0ad" />
 
 - Logout
   <img width="1280" alt="logout" src="https://github.com/user-attachments/assets/58314b5e-a890-4d08-a539-76e42b5b6137" />
 
-- Access Denied :
+- 🚨 Access Denied :
   <img width="1279" alt="denied" src="https://github.com/user-attachments/assets/4b62aec7-a221-4eb4-8cab-3eea8c8ed6f7" />
 
  #### 🌐 Points d'accès
