@@ -76,8 +76,7 @@ Pour des raisons de sécurité, les mots de passe ne sont jamais stockés en cla
 - Page de login
    - Login 'ADMIN' :
      <img width="1280" alt="login" src="https://github.com/user-attachments/assets/da31e8d1-357b-4b5d-bd88-8b3398afc5cb" />
-   - Login 'USER' :
-   - <img width="1280" alt="safae" src="https://github.com/user-attachments/assets/dde927a2-3a79-4965-be4c-9987b4a6b148" />
+   - Login 'USER' : (De même)
    - Invalid Login :
      <img width="1280" alt="invalid" src="https://github.com/user-attachments/assets/c16b19c7-a90d-4026-aecb-e7d904ba8c22" />
 - 🔐 Utilisateurs par défaut
