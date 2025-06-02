@@ -68,6 +68,7 @@ L'objectif est de créer une application web JEE de gestion de produits basée s
    - Invalid Login :
      <img width="1280" alt="invalid" src="https://github.com/user-attachments/assets/c16b19c7-a90d-4026-aecb-e7d904ba8c22" />
 - 🔐 Utilisateurs par défaut
+
 | Username | Password | Rôles       |
 |----------|----------|-------------|
 | safae    | 1234     | USER        |
