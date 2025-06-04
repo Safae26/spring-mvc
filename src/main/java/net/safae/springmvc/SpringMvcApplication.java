@@ -2,14 +2,12 @@ package net.safae.springmvc;
 
 import net.safae.springmvc.entities.Product;
 import net.safae.springmvc.repositories.ProductRepository;
-import org.springframework.boot.CommandLineRunner;
-import org.springframework.boot.SpringApplication;
+import org.springframework.boot.*;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration;
 import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication()
-//exclude = { SecurityAutoConfiguration.class }
+//exclude = { SecurityAutoConfiguration.class } // Désactivation de la protection par défaut de Spring Security (au début)
 public class SpringMvcApplication {
 
     public static void main(String[] args) {
@@ -17,12 +15,14 @@ public class SpringMvcApplication {
     }
 
     @Bean
-    CommandLineRunner start(ProductRepository repository, ProductRepository productRepository) {
+    CommandLineRunner start(ProductRepository productRepository) {
         return args -> {
+
             productRepository.save(Product.builder().name("Mouse").price(120).quantity(500).build());
             productRepository.save(Product.builder().name("Laptop").price(5000).quantity(20000).build());
             productRepository.save(Product.builder().name("Smartphone").price(1000).quantity(9000).build());
 
+            // Autres :
 
             // Computer Hardware
             productRepository.save(Product.builder().name("Wireless Keyboard").price(59.99).quantity(350).build());
@@ -60,9 +60,7 @@ public class SpringMvcApplication {
             productRepository.save(Product.builder().name("Monitor Arm").price(89.99).quantity(160).build());
 
             productRepository.findAll().forEach(
-                    product -> {
-                        System.out.println(product.toString());
-                    }
+                    product -> System.out.println(product.toString())
             );
         };
     }

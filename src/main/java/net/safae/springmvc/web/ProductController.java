@@ -5,13 +5,12 @@ import jakarta.validation.Valid;
 import net.safae.springmvc.entities.Product;
 import net.safae.springmvc.repositories.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.*;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 @Controller
 public class ProductController {
@@ -20,16 +19,37 @@ public class ProductController {
 
     @GetMapping("/user/index")
     @PreAuthorize("hasRole('USER')")
-    public String index(Model model) {
-        List<Product> products = productRepository.findAll();
-        model.addAttribute("productsList", products);
+    public String index(
+            Model model,
+            @RequestParam(defaultValue = "0") int page,
+            @RequestParam(defaultValue = "5") int size,
+            @RequestParam(defaultValue = "") String keyword) {
+
+        Pageable pageable = PageRequest.of(page, size);
+        Page<Product> productsPage = keyword.isEmpty() ?
+                productRepository.findAll(pageable) :
+                productRepository.findByNameContains(keyword, pageable);
+
+        int fromItem = page * size + 1;
+        int toItem = (int) Math.min((long) (page + 1) * size, productsPage.getTotalElements());
+
+        model.addAttribute("products", productsPage.getContent());
+        model.addAttribute("currentPage", page);
+        model.addAttribute("totalPages", productsPage.getTotalPages());
+        model.addAttribute("pageSize", size);
+        model.addAttribute("keyword", keyword);
+        model.addAttribute("fromItem", fromItem);
+        model.addAttribute("toItem", toItem);
+        model.addAttribute("totalItems", productsPage.getTotalElements());
+
         return "products";
     }
 
     @GetMapping("/")
     public String home() {
-        return "redirect:/user/index";
+        return "home";
     }
+
     // Pour 'Delete', il ne faut jamais utiliser GET, c'est une faille de sécurité
     @PreAuthorize("hasRole('ADMIN')")
     @PostMapping("/admin/delete")
@@ -38,7 +58,7 @@ public class ProductController {
         return "redirect:/user/index";
     }
 
-    @GetMapping("/newProduct")
+    @GetMapping("/admin/newProduct")
     @PreAuthorize("hasRole('ADMIN')")
     public String newProduct(Model model) {
         model.addAttribute("product", new Product());
@@ -73,7 +93,7 @@ public class ProductController {
 
     @PreAuthorize("hasRole('ADMIN')")
     @GetMapping("/admin/edit/{id}")
-    public String editProductForm(@PathVariable Long id, Model model) {  // Changé de @RequestParam à @PathVariable
+    public String editProductForm(@PathVariable Long id, Model model) {
         Product product = productRepository.findById(id)
                 .orElseThrow(() -> new IllegalArgumentException("Produit invalide ID: " + id));
         model.addAttribute("product", product);
@@ -82,7 +102,7 @@ public class ProductController {
 
     @PreAuthorize("hasRole('ADMIN')")
     @PostMapping("/admin/update/{id}")
-    public String updateProduct(@PathVariable Long id, @Valid Product product,  // Changé de @RequestParam à @PathVariable
+    public String updateProduct(@PathVariable Long id, @Valid Product product,
                                 BindingResult result, Model model) {
         if (result.hasErrors()) {
             product.setId(id);
@@ -104,7 +124,4 @@ public class ProductController {
         model.addAttribute("errorMessage", ex.getMessage());
         return "error";
     }
-
-    // 404 : Page not found
-    // 405 : Méthode pas autorisée
 }

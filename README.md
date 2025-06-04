@@ -150,6 +150,9 @@ Pour des raisons de sécurité, les mots de passe ne sont jamais stockés en cla
 ### 9. **Améliorations possibles** :
    - Ajout d'un système d'inscription (register)
    - Modification des profils utilisateurs
+   - Garder le keyword dans la barre de recherche meme si on bascule entre les pages, ainsi que dans l'url
+   - De meme pour delete et edit, on ne doit pas perdre le keyword apres ces actions
+   - Donc, on doit toujours garder le keyword et la page courante
 
 
 **Auteur :** Safae ERAJI
